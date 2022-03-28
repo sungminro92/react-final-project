@@ -27,7 +27,7 @@ A guiding website that helps users to plan and prep dinners, including food reci
 
 #### PostMVP EXAMPLE
 
-- Add clickabel tags
+- Make tags clickable
 - Make it responsive design for mobile, tablet, and desktop screens sizes.
 - Utilize other APIs to add more information of the recipe, such as calories, prep time, or nutritions.
 
