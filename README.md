@@ -11,33 +11,30 @@ A guiding website that helps users to plan and prep dinners, including food reci
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
-
 - [Wireframes](./images/react-final-wireframe.png)
 - [React Architecture]()
 
 
 #### MVP 
-
+- Pull available data from [TheMealDB](https://www.themealdb.com/api.php) & [TheCocktailDB](https://www.thecocktaildb.com/api.php) APIs
 - Home page with several navigations
-- Recipe page where all recipes from
-- Ability for user to searcch for a recipe
-- Ability for user to filter by a category
 - Recipe detail page with food image, instructions, and ingredients
-- Favorite page where all saved recipes are shown
+- Favorite page where users can all saved recipes are shown
+- Ability for user to searcch for a recipe
+- Ability for user to filter out by categories
 - Ability for user to save a recipe
 - Ability for user to delete a recipe from favorite recipe list
-- 
 
 #### PostMVP EXAMPLE
 
-- Add Stripe or Shopify Pay for checkout
-- Caputre users email in a form and send an automated response
-- Build the app for mobile/tablet/desktop
+- Add clickabel tags
+- Make it responsive design for mobile, tablet, and desktop screens sizes.
+- Utilize other APIs to add more information of the recipe, such as calories, prep time, or nutritions.
 
 ## API
 
-If you opted to make use of an API then use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
+- [TheMealDB](https://www.themealdb.com/api.php)
+- [TheCocktailDB](https://www.thecocktaildb.com/api.php)
 
 
 ```json
@@ -115,14 +112,21 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+```jsx
+// filtering through recipes
+  let search = "chicken";
+  let foodType = "Indian";
+
+  fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + search)
+    .then((data) => data.json())
+    .then((jsonData) => {
+      let foodArr = jsonData.meals;
+      let filtered = foodArr.filter((food) => food.strArea === foodType);
+      console.log(filtered);
+    });
 ```
