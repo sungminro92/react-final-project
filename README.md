@@ -10,7 +10,7 @@ A guiding website that helps users to plan and prep dinners, including food reci
 
 
 ## Wireframes
-[external link to Wireframes](./images/react-final-wireframe.png)
+- [external link to Wireframes](./images/react-final-wireframe.png)
 ![Wireframes](./images/react-final-wireframe.png)
 - [React Architecture]()
 
