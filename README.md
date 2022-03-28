@@ -6,15 +6,15 @@
 
 ## Project Description
 
-A website where user can browse through recipes
+A guiding website that helps users to plan and prep dinners, including food recipes and cocktail recipes.
 
 
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your visual wireframes]()
-- [add link to your react architecture]()
+- [Wireframes](./images/react-final-wireframe.png)
+- [React Architecture]()
 
 
 #### MVP 
