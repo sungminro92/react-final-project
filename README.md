@@ -107,8 +107,14 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Component | Description | 
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| FoodPage | This will render the header include the nav | 
+| DrinkPage | This will render the header include the nav | 
+| SavedPage | This will render a page where all saved food & drink recipe cards are displayed | 
+| FoodDetail | This will render a page where it includes selected food recipe details | 
+| DrinkDetail | This will render a page where it includes selected drink recipe details| 
+| RecipeCard | This will render either food & drink recipe card inside FoodPage & DrinkPage Components | 
+| SearchForm | This will render a search form inside FoodPage & DrinkPage Components. | 
+
 
 
 ## Additional Libraries
